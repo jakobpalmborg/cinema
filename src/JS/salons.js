@@ -18,14 +18,14 @@ async function filterSalonMovies() {
   const allMovies = await getMovies();
 
   if (
-    location.pathname === "/salonA.html" ||
-    location.pathname === "/Uppgift2-Biograf/salonA.html"
+    location.pathname === "/salonA" ||
+    location.pathname === "/Uppgift2-Biograf/salonA"
   ) {
     const resultSalonA = allMovies.filter((movie) => movie.salon === "A");
     renderFilter(resultSalonA);
   } else if (
-    location.pathname === "/salonB.html" ||
-    location.pathname === "/Uppgift2-Biograf/salonB.html"
+    location.pathname === "/salonB" ||
+    location.pathname === "/Uppgift2-Biograf/salonB"
   ) {
     const resultSalonB = allMovies.filter((movie) => movie.salon === "B");
     renderFilter(resultSalonB);

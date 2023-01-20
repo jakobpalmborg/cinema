@@ -3,6 +3,7 @@ import { getMovies } from "./getMovies.js";
 export default function sidebar() {
 if (
     location.pathname === "/index.html" ||
+    location.pathname === "/index" ||
     location.pathname === "/Uppgift2-Biograf/index.html" ||
     location.pathname === "/Uppgift2-Biograf/restaurant.html" ||
     location.pathname === "/Uppgift2-Biograf/" ||

@@ -5,6 +5,7 @@ if (
     location.pathname === "/Uppgift2-Biograf/" ||
     location.pathname === "/Uppgift2-Biograf/index.html" ||
     location.pathname === "/index.html" ||
+    location.pathname === "/index" ||
     location.pathname === "/"
   ) {
     (async function () {
