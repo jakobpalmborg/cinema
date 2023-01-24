@@ -16,6 +16,10 @@ app.get('/index', (req, res) => {
     res.render('index')
 });
 
+app.get('/movie-info/1', (req, res) => {
+    res.render('movie-info')
+});
+
 app.get('/movies', (req, res) => {
     res.render('movies');
 });
