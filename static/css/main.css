@@ -1031,3 +1031,46 @@ header nav menu .active {
     margin-left: 1.5rem;
   }
 }
+.movie-list-cont {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.movie-list-startpage {
+  padding: 1rem;
+  list-style: none;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.movie-list-link-startpage {
+  color: white;
+}
+
+.movie-info-cont .movie-info-heading {
+  color: white;
+}
+.movie-info-cont .movie-info-text {
+  color: white;
+  padding: 1rem 0;
+}
+.movie-info-cont img {
+  width: 100%;
+}
+.movie-info-cont .buy-button-container {
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.movie-info-cont .buy-button-container button {
+  color: white;
+  background-color: #cc0028;
+  padding: 1rem 2.5rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+}
+.movie-info-cont .buy-button-container button a {
+  color: white;
+}
