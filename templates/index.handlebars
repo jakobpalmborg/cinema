@@ -69,7 +69,15 @@
 
       <section>
         <div>
-         <a href="movie-info/1">link to info about a movie</a>
+         <ul>
+{{#each movies }}
+  <li>
+    <a href="/movie-info/{{ this.id }}">
+      {{ this.attributes.title }}
+    </a>
+  </li>
+{{/each}}
+</ul>
         </div>
 
       <section class="show-movies sec-cont">

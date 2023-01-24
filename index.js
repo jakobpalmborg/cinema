@@ -1,6 +1,7 @@
 import express from 'express';
 import fs from 'fs/promises';
 import { engine } from 'express-handlebars';
+import { loadMovies } from "./src/JS/movies-from-api.js";
 
 const app = express();
 app.engine("handlebars", engine());
@@ -8,9 +9,15 @@ app.set("view engine", "handlebars");
 app.set("views", "./templates");
 app.set("partials", "/templates/partials");
 
-app.get('/', (req, res) => {
-    res.render('index')
-});
+
+app.get("/", async (req, res) => {
+    const movies = await loadMovies();
+    res.render("index", { movies });
+  });
+
+// app.get('/', (req, res) => {
+//     res.render('index')
+// });
 
 app.get('/index', (req, res) => {
     res.render('index')
