@@ -1,4 +1,5 @@
 
+<script type="module" src="/src/JS/movie-info.js" defer></script>
 
 <main class="main-container sec">
     <div class="sec-cont movie-info-cont" >
@@ -10,7 +11,7 @@
         <img src="{{ movie.attributes.image.url }}">
         {{/if }}
         <div class="buy-button-container">
-            <button><a href="/booking">Köp biljetter</a></button>
+            <button><a id="btnBook" >Köp biljetter</a></button>
         </div>
     </div>
 </main>

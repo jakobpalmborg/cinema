@@ -2,16 +2,12 @@ const bookingRenderContainer = document.querySelector(
   "#booking-render-container"
 );
 
-const saveBookingInfo = () => {
-  //placeholders for variables
-  let salon = "A"; //e.target.dataset.salon
-  let title = "Terminator"; //e.target.datset.title
-  let time = "2022-12-29 kl. 20.00"; //e.target.datset.time
 
-  renderBooking(salon, title, time);
-};
 
-const renderBooking = (salon, title, time) => {
+
+
+
+export function renderBooking(salon, title, time) {
   let bookingInfoContainer = document.createElement("div");
   bookingInfoContainer.innerHTML = `
         <h2>salong ${salon}</h2>
@@ -73,4 +69,4 @@ const renderBooking = (salon, title, time) => {
 };
 
 // This should be triggered from an event when you click "biljetter" in the info about movie page.
-saveBookingInfo();
+// saveBookingInfo();
