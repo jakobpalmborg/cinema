@@ -1,7 +1,7 @@
 import express from 'express';
 import fs from 'fs/promises';
 import { engine } from 'express-handlebars';
-import { loadMovies } from "./src/JS/movies-from-api.js";
+import { loadMovie, loadMovies } from "./src/JS/movies-from-api.js";
 
 const app = express();
 app.engine("handlebars", engine());
@@ -15,17 +15,31 @@ app.get("/", async (req, res) => {
     res.render("index", { movies });
   });
 
+app.get("/index", async (req, res) => {
+    const movies = await loadMovies();
+    res.render("index", { movies });
+  });
+
+  app.get("/movie-info/:movieId", async (req, res) => {
+    const movie = await loadMovie(req.params.movieId);
+    if (movie) {
+      res.render("movie-info", { movie });
+    } else {
+      res.status(404).render("404");
+    }
+  });
+
 // app.get('/', (req, res) => {
 //     res.render('index')
 // });
 
-app.get('/index', (req, res) => {
-    res.render('index')
-});
+// app.get('/index', (req, res) => {
+//     res.render('index')
+// });
 
-app.get('/movie-info/1', (req, res) => {
-    res.render('movie-info')
-});
+// app.get('/movie-info/1', (req, res) => {
+//     res.render('movie-info')
+// });
 
 app.get('/movies', (req, res) => {
     res.render('movies');

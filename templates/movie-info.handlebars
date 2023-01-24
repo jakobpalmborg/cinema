@@ -1,1 +1,10 @@
-This is the movie info site
+
+<div>
+  <h1>{{ movie.attributes.title }}</h1>
+  <div>
+    {{ movie.attributes.intro }}
+  </div>
+  {{#if movie.attributes.image }}
+  <img src="{{ movie.attributes.image.url }}">
+  {{/if }}
+</div>
