@@ -9,3 +9,13 @@ test('home page shows list of movies', async () => {
         .expect(200)
     expect(response.text.includes('Shawshank')).toBeTruthy();
 });
+
+test('Encanto page returns Encanto info', async () => {
+    const response = await request(app)
+      .get('/movie-info/2')
+      .expect('Content-Type', 'text/html; charset=utf-8')
+      .expect(200);
+  
+    expect(response.text.includes('Encanto')).toBeTruthy();
+    expect(response.text.includes('Shawshank')).toBeFalsy();
+  });

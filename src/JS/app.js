@@ -1,5 +1,4 @@
 import express from 'express';
-import fs from 'fs/promises';
 import { engine } from 'express-handlebars';
 import { loadMovie, loadMovies } from "./movies-from-api.js";
 
@@ -28,18 +27,6 @@ app.get("/index", async (req, res) => {
       res.status(404).render("404");
     }
   });
-
-// app.get('/', (req, res) => {
-//     res.render('index')
-// });
-
-// app.get('/index', (req, res) => {
-//     res.render('index')
-// });
-
-// app.get('/movie-info/1', (req, res) => {
-//     res.render('movie-info')
-// });
 
 app.get('/movies', (req, res) => {
     res.render('movies');
