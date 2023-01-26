@@ -1,2 +1,1 @@
-# Team-vadSomHelst
-GruppUppgift 2 – webbsida till Biograf 
+Assignement from my education. The assignement started as a group assignment to create a front end page for a fictive cinema. The next step in this assignment was to individuallay work with the backend and create a server with Node and Express, server side render the page with Handlebars and write a test with Jest.
