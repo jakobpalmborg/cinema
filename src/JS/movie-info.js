@@ -86,15 +86,15 @@ function renderBooking(salon, title, time) {
 // saveBookingInfo();
 
 
-// export async function movieInfo() {
-//   const movieOption = document.querySelectorAll(".movies-list-item");
-//   const description = document.querySelector(".description");
+export async function movieInfo() {
+  const movieOption = document.querySelectorAll(".movies-list-item");
+  const description = document.querySelector(".description");
 
-//   for (let i = 0; i < movieOption.length; i++) {
-//     movieOption[i].addEventListener("click", openMovieInfo, false);
-//   }
-//   function openMovieInfo(e) {
-//     e.preventDefault();
-//     window.open("under-construction");
-//   }
-// }
+  for (let i = 0; i < movieOption.length; i++) {
+    movieOption[i].addEventListener("click", openMovieInfo, false);
+  }
+  function openMovieInfo(e) {
+    e.preventDefault();
+    window.open("under-construction");
+  }
+}

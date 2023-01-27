@@ -1071,6 +1071,26 @@ header nav menu .active {
   font-weight: bold;
   border: none;
 }
+.movie-info-cont .buy-button-container button :hover {
+  cursor: pointer;
+}
 .movie-info-cont .buy-button-container button a {
   color: white;
+}
+
+.movie-list-on-movie-page {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 60ch;
+  max-width: 85vw;
+  text-align: center;
+  margin: 2rem auto;
+}
+.movie-list-on-movie-page h1 {
+  color: white;
+}
+.movie-list-on-movie-page ul {
+  text-align: center;
 }

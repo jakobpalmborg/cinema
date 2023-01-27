@@ -28,8 +28,9 @@ app.get("/index", async (req, res) => {
     }
   });
 
-app.get('/movies', (req, res) => {
-    res.render('movies');
+app.get("/movies", async (req, res) => {
+  const movies = await loadMovies();
+  res.render("movies", { movies });
 });
 
 app.get('/salons', (req, res) => {

@@ -1,0 +1,17 @@
+.movie-list-on-movie-page {
+ 
+ background-color: rgba($second-color, 0.3);
+ box-sizing: border-box;
+ padding: 1.5rem;
+ border-radius: 1rem;
+ width: 60ch;
+ max-width: 85vw;
+ text-align: center;
+ margin: 2rem auto;
+    h1 {
+        color: white;
+    }
+    ul {
+        text-align: center;
+    }
+  }

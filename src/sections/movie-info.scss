@@ -23,6 +23,10 @@
       font-weight: bold;
       border: none;
 
+      :hover {
+        cursor: pointer;
+      }
+
       a {
         color: white;
       }

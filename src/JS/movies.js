@@ -1,5 +1,5 @@
 import { getMovies } from "./getMovies.js";
-import { movieInfo } from "./movie-info.js";
+// import { movieInfo } from "./movie-info.js";
 
 export async function renderMovies() {
   const allMovies = await getMovies();
@@ -20,7 +20,7 @@ export async function renderMovies() {
     textOnImage.innerHTML = `<span>${category}</span>`;
     ul.appendChild(li);
     li.appendChild(textOnImage);
-    movieInfo();
+    // movieInfo();
   }
 
   comedyCategory.forEach((link) => {
@@ -41,7 +41,7 @@ export async function renderMovies() {
           textOnImage.innerHTML = `<span>${category}</span>`;
           ul.appendChild(li);
           li.appendChild(textOnImage);
-          movieInfo();
+          // movieInfo();
         }
       }
     });
@@ -65,7 +65,7 @@ export async function renderMovies() {
           textOnImage.innerHTML = `<span>${category}</span>`;
           ul.appendChild(li);
           li.appendChild(textOnImage);
-          movieInfo();
+          // movieInfo();
         }
       }
     });
@@ -89,7 +89,7 @@ export async function renderMovies() {
           textOnImage.innerHTML = `<span>${category}</span>`;
           ul.appendChild(li);
           li.appendChild(textOnImage);
-          movieInfo();
+          // movieInfo();
         }
       }
     });

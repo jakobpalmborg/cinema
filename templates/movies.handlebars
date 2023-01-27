@@ -1,5 +1,25 @@
  <script type="module" src="src/JS/movies.js" defer></script>
+    
+       <div class="movie-list-cont movie-list-on-movie-page">
+        <h1>Movies</h1>
+        <ul class="movie-list-startpage">
+          {{#each movies}}
+            <li>
+              <a
+                class="movie-list-link-startpage"
+                href="/movie-info/{{this.id}}"
+              >
+                {{this.attributes.title}}
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
  <main class="movies sec">
+
+    
+  
       <section class="movies-content sec-cont">
         <div>
           <h2 class="movies-h2"></h2>
@@ -19,4 +39,7 @@
         </div>
         <ul class="movies-list"></ul>
       </section>
+
+
+
     </main>
